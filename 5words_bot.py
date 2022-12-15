@@ -15,7 +15,7 @@ N = 5
 #     bot.send_message(m.from_user.id, 'Чтобы выйти из игры введите: exit')
 #
 
-rus_lib = open('rus_lib.txt', 'r')
+rus_lib = open('russian_nouns.txt', 'r')
 ru_list = [i.rstrip() for i in rus_lib if len(i.rstrip()) == N]
 random_word = random.choice(ru_list)
 rus_lib.close()
@@ -78,3 +78,4 @@ def game(user_input, r_word, ru_l):
 
 
 bot.polling(none_stop=True, interval=0)
+#add new library
