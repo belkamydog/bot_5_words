@@ -1,7 +1,7 @@
 import telebot
 import game_5_words
 
-bot = telebot.TeleBot('5908717917:AAEsZzQ_rGrwzImO0p3UEO1-6Qqi7xNkpmg')
+bot = telebot.TeleBot('token')
 
 
 @bot.message_handler(content_types=['text'])
